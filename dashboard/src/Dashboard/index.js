@@ -1,20 +1,18 @@
 import React from "react";
-import { Box, Flex } from "@chakra-ui/react";
+import { Flex, Grid } from "@chakra-ui/react";
 import CardOverview from "./CardOverview";
+import SidebarNav from "./Sidebar";
 
 const AppDashboard = () => {
   return (
-    <Flex align="center" justify="center" bg="gray.50" h="100vh">
-      <Box
-        w={["90vw", "90vw", "100vw"]}
-        boxShadow="dark-lg"
-        p={[4, 8, 10]}
-        rounded="md"
-        bg="white"
-      >
+    <Grid bg="gray.50">
+      <Flex justify="center" h="100%" pt="60px">
         <CardOverview />
-      </Box>
-    </Flex>
+      </Flex>
+      <Flex>
+        <SidebarNav />
+      </Flex>
+    </Grid>
   );
 };
 

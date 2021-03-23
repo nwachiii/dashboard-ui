@@ -1,0 +1,19 @@
+{
+  "cardDetails": [
+    {
+      "_id": "1st-card",
+      "title": "Shopping Cart",
+      "iconUrl": ""
+    },
+    {
+      "_id": "2nd-card",
+      "title": "Shopping Cart",
+      "iconUrl": ""
+    },
+    {
+      "_id": "3rd-card",
+      "title": "Shopping Cart",
+      "iconUrl": ""
+    }
+  ]
+}

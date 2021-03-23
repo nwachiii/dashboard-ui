@@ -1,14 +1,39 @@
 import React from 'react'
-import { Grid } from '@chakra-ui/react';
-import { Card } from '../Components/Cards';
+import { BiCoinStack, BiDollar, BiEuro } from "react-icons/bi";
+import { Circle, Flex, Grid, Spacer, Text } from "@chakra-ui/layout";
+import Card from '../Components/Cards';
+import { Avatar } from '@chakra-ui/avatar';
 
 const CardOverview = () => {
     return (
-      <Grid templateColumns="repeat(4, 1fr)" gap={6}>
-        <Card minH={20}>
-            <h5>Hey I'm alive!</h5>
+      <Flex wrap="wrap" w="100%" justify="center">
+        <Card>
+          <Avatar
+            size="xl"
+            name="Ryan Florence"
+            src="https://bit.ly/ryan-florence"
+          />
+          <Text fontSize="24px">Ryan Florence</Text>
         </Card>
-      </Grid>
+        <Card>
+          <Circle size="60px" bg="tomato" color="white">
+            <BiCoinStack fontSize="45px" />
+          </Circle>
+          <Text fontSize="24px">Balance: 12.5</Text>
+        </Card>
+        <Card>
+          <Circle size="60px" bg="tomato" color="white">
+            <BiDollar fontSize="45px" />
+          </Circle>
+          <Text fontSize="24px">Bank Account</Text>
+        </Card>
+        <Card>
+          <Circle size="60px" bg="tomato" color="white">
+            <BiEuro fontSize="45px" />
+          </Circle>
+          <Text fontSize="24px">Card Number</Text>
+        </Card>
+      </Flex>
     );
 }
 
