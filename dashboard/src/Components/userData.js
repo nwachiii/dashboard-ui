@@ -1,0 +1,77 @@
+
+const userData = [
+  {
+    Plan: "Silver",
+    Deposit: "$550.00",
+    Withdraw: "$632.50",
+    MaturityDate: "2021-01-17",
+    Status: "running",
+    PaymentStatus: "Payment Confirmed",
+  },
+  {
+    Plan: "Gold",
+    Deposit: "$2,550.00",
+    Withdraw: "$3,060.00",
+    MaturityDate: "2021-01-18",
+    Status: "running",
+    PaymentStatus: "Complete Transaction",
+  },
+  {
+    Plan: "Diamond",
+    Deposit: "$7,250.00",
+    Withdraw: "$9,787.50",
+    MaturityDate: "2021-01-22",
+    Status: "running",
+    PaymentStatus: "Payment Confirmed",
+  },
+  {
+    Plan: "Gold",
+    Deposit: "$2,550.00",
+    Withdraw: "$3,060.00",
+    MaturityDate: "2021-01-18",
+    Status: "running",
+    PaymentStatus: "Complete Transaction",
+  },
+  {
+    Plan: "Silver",
+    Deposit: "$550.00",
+    Withdraw: "$632.50",
+    MaturityDate: "2021-01-17",
+    Status: "running",
+    PaymentStatus: "Payment Confirmed",
+  },
+  {
+    Plan: "Gold",
+    Deposit: "$2,550.00",
+    Withdraw: "$3,060.00",
+    MaturityDate: "2021-01-18",
+    Status: "running",
+    PaymentStatus: "Complete Transaction",
+  },
+  {
+    Plan: "Silver",
+    Deposit: "$550.00",
+    Withdraw: "$632.50",
+    MaturityDate: "2021-01-17",
+    Status: "running",
+    PaymentStatus: "Payment Confirmed",
+  },
+  {
+    Plan: "Diamond",
+    Deposit: "$7,250.00",
+    Withdraw: "$9,787.50",
+    MaturityDate: "2021-01-22",
+    Status: "running",
+    PaymentStatus: "Payment Confirmed",
+  },
+  {
+    Plan: "Silver",
+    Deposit: "$550.00",
+    Withdraw: "$632.50",
+    MaturityDate: "2021-01-17",
+    Status: "running",
+    PaymentStatus: "Payment Confirmed",
+  },
+];
+
+export default userData

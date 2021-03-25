@@ -10,7 +10,6 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import Card from "../../Components/Cards";
 
 const SidebarNav = () => {
   return (
@@ -18,8 +17,6 @@ const SidebarNav = () => {
       <Flex
         pl={4}
         pr="3.5em"
-        ml="9.5em"
-        mt="5em"
         py={8}
         w={280}
         bg="blue.800"
@@ -27,31 +24,30 @@ const SidebarNav = () => {
         borderRadius="md"
       >
         <List spacing={3}>
-          <ListItem fontSize="22px">
-            <ListIcon as={AiOutlineDashboard} color="tomato" />
+          <ListItem fontSize="18px">
+            <ListIcon fontSize="24px" as={AiOutlineDashboard} color="tomato" />
             Dashboard
           </ListItem>
-          <ListItem fontSize="22px">
-            <ListIcon as={AiOutlineDashboard} color="tomato" />
+          <ListItem fontSize="18px">
+            <ListIcon fontSize="24px" as={AiOutlineDashboard} color="tomato" />
             Invest
           </ListItem>
-          <ListItem fontSize="22px">
-            <ListIcon as={AiOutlineDashboard} color="tomato" />
+          <ListItem fontSize="18px">
+            <ListIcon fontSize="24px" as={AiOutlineDashboard} color="tomato" />
             Request Money
           </ListItem>
-          <ListItem fontSize="22px">
-            <ListIcon as={AiOutlineDashboard} color="tomato" />
+          <ListItem fontSize="18px">
+            <ListIcon fontSize="24px" as={AiOutlineDashboard} color="tomato" />
             Transaction Log
           </ListItem>
-          <ListItem fontSize="22px">
-            <ListIcon as={AiOutlineDashboard} color="tomato" />
+          <ListItem fontSize="18px">
+            <ListIcon fontSize="24px" as={AiOutlineDashboard} color="tomato" />
             Settings
           </ListItem>
         </List>
       </Flex>
 
       <VStack
-        ml="9.5em"
         mt="5em"
         py={8}
         bg="blue.800"
@@ -63,7 +59,7 @@ const SidebarNav = () => {
         <Circle size="60px" bg="tomato" color="white">
           <FaHandsHelping fontSize="45px" />
         </Circle>
-        <Text fontSize='24px'>Need Help ?</Text>
+        <Text fontSize="24px">Need Help ?</Text>
       </VStack>
     </VStack>
   );
