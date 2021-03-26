@@ -1,11 +1,18 @@
 import React from "react";
-import { Divider, Flex, Grid } from "@chakra-ui/react";
-import CardOverview from "./CardOverview";
-import SidebarNav from "../../Components/Sidebar";
-import Table from "./Table";
-import "./Table/Table.scss";
-import userData from '../../Components/userData'
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
+// components
+import CardOverview from "../../Components/Cards/CardOverview";
+import SidebarNav from "../../Components/Sidebar";
+import Table from "../Table";
+import Invest from "../Invest";
+import RequestMoney from "../RequestMoney";
+import TransactionLog from "../TransactionLog";
+import Settings from "../Settings";
+
+
+// styles
+import { Flex, Grid } from "@chakra-ui/react";
 
 const AppDashboard = () => {
   return (
@@ -19,26 +26,21 @@ const AppDashboard = () => {
         direction={["column", "row", "row"]}
         wrap="wrap"
         mt={[12, null, null]}
-        ml={[null,null, '4.8em']}
+        ml={[null, null, "4.8em"]}
         justify="center"
       >
-        <Flex justify="center" mb={[8, 8, null]}>
-          <SidebarNav />
-        </Flex>
-        <Flex justify="center" ml={[null, null, 8]}>
-          <Table
-            tableData={userData}
-            headingColumns={[
-              "Plan",
-              "Deposit",
-              "Withdraw",
-              "Maturity Date",
-              "Status",
-              "Payment status",
-            ]}
-            title="User data"
-          />
-        </Flex>
+        <BrowserRouter>
+          <Flex justify="center" mb={[8, 8, null]}>
+            <SidebarNav />
+          </Flex>
+          <Switch>
+            <Route path="/dashboard" exact component={Table} />
+            <Route path="/invest" component={Invest} />
+            <Route path="/requestMoney" component={RequestMoney} />
+            <Route path="/transaction" component={TransactionLog} />
+            <Route path="/settings" component={Settings} />
+          </Switch>
+        </BrowserRouter>
       </Flex>
     </Grid>
   );
