@@ -16,8 +16,8 @@ function App() {
         {/* <AppDashboard /> */}
         <Switch>
           <Route path="/" exact component={AppDashboard} />
-          <Route path="/forgot-password" component={ForgotPassword} />
-          <Route path="/confirm-password" component={ConfirmPassword} />
+          <Route path="/forgotPassword" component={ForgotPassword} />
+          <Route path="/confirmPassword" component={ConfirmPassword} />
 
           {/* <ForgotPassword />
           <ConfirmPassword /> */}

@@ -1,32 +1,32 @@
 import React from "react";
-import * as FaIcons from "react-icons/fa";
+import * as GiIcons from "react-icons/gi";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 
 export const SidebarData = [
-  {
-    title: "Dashboard",
-    path: "/dashboard",
-    icon: <AiIcons.AiOutlineDashboard/>,
-  },
-  {
-    title: "Invest",
-    path: "/invest",
-    icon: <IoIcons.IoIosPaper/>,
-  },
-  {
-    title: "Request Money",
-    path: "/requestMoney",
-    icon: <FaIcons.FaCartPlus/>,
-  },
-  {
-    title: "Transaction Log",
-    path: "/transaction",
-    icon: <IoIcons.IoMdPeople/>,
-  },
-  {
-    title: "Settings",
-    path: "/settings",
-    icon: <IoIcons.IoMdPeople/>,
-  }
-];
+         {
+           title: "Dashboard",
+           path: "/home",
+           icon: <AiIcons.AiOutlineDashboard />,
+         },
+         {
+           title: "Invest",
+           path: "/Invest",
+           icon: <IoIcons.IoIosPaper />,
+         },
+         {
+           title: "Request Money",
+           path: "/requestMoney",
+           icon: <GiIcons.GiTakeMyMoney />,
+         },
+         {
+           title: "Transaction Log",
+           path: "/transaction",
+           icon: <AiIcons.AiOutlineTransaction />,
+         },
+         {
+           title: "Settings",
+           path: "/settings",
+           icon: <AiIcons.AiFillSetting />,
+         },
+       ];
